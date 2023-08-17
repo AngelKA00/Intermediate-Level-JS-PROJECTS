@@ -1,0 +1,97 @@
+  HTML:
+<div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fa-solid fa-xmark"></span>
+                <img src="cart-item-1.png" alt="">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fa-solid fa-xmark"></span>
+                <img src="cart-item-3.png" alt="">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$15.99/-</div>
+                </div><div class="cart-item">
+                    <span class="fa-solid fa-xmark"></span>
+                    <img src="cart-item-1.png" alt="">
+                    <div class="content">
+                        <h3>cart item 01</h3>
+                        <div class="price">$15.99/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fa-solid fa-xmark"></span>
+                    <img src="cart-item-4.png" alt="">
+                    <div class="content">
+                        <h3>cart item 04</h3>
+                        <div class="price">$15.99/-</div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Checkout</a>
+            </div>
+        </div>
+CSS:
+.cart-items-container
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: auto;
+    width: 20rem;
+    background-color: white;
+    padding: 0 1.5rem;
+}
+.cart-item
+{
+    position:relative;
+    
+    margin: 2rem 0;
+    align-items: center;
+    gap: 1.5rem;
+}
+.fa-xmark
+{
+    cursor: pointer;
+}
+.fa-xmark:hover
+{
+    color: darkgoldenrod;
+}
+
+.img
+{
+    height: 7rem;
+}
+
+.content h3
+{
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.price
+{
+    color: darkgoldenrod;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.btn
+{
+    color: white;
+    display: flex;
+    background-color: darkgoldenrod;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 0.3rem;
+    width: 100%;
+    text-align: center;
+}
+.btn:hover
+{
+    letter-spacing: 0.2rem;
+}
