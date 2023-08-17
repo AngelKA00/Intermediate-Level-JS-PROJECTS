@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb2f9d3842.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!------------nav bar------------>
+    <nav class="navbar">
+        <!-----logo image----->
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" ></a>
+            <div class="search-box"><!-----search box near logo------>
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <!------menu in center------>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" ><span>Home</span></a></li><!--active-link is used since home must have underline-->
+                <li><a href="#"><img src="images/network.png" ><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" ><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" ><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" ><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <!-----user profile------->
+        <div class="navbar-right">
+            <div class="online"><!------to make user is online with green dot----->
+                <!-------js is used here to show/hide user profile-->
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+            
+        </div>
+        <!------profile drop down menu---------->
+        <div class="profile-menu-wrap" id="profileMenu"> 
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Brian</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!------end of nav bar------>
+    <div class="container">
+        <!-----main profile section------>
+        <div class="profile-main">
+            <!------profile container-------->
+            <div class="profile-container">
+                <img src="images/cover-pic.png" width="100%">
+                <div class="profile-container-inner">
+                    <img src="images/user-1.png" class="profile-pic">
+                    <h1>Brian</h1>
+                    <b>Chief Executive Officer at Barro | Former Strategy Manager at Unicon</b>
+                    <p>Seoul, South Korea &middot; <a href="#">Contact info</a></p>
+                    <div class="mutual-connection">
+                        <img src="images/user-2.png">
+                        <span>1 mutual connection : Park Morgan</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="images/connect.png">Connect</a>
+                        <a href="#"><img src="images/chat.png">Message</a>
+                    </div>
+                </div>
+            </div>
+            <!------end of profile container-------->
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quis rem voluptatem expedita aspernatur aut omnis beatae 
+                    excepturi facere ab distinctio nemo aliquam alias id mollitia, 
+                    qui illum eligendi aperiam cum!
+                </p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+            <!-----experience------>
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/barro.png">
+                    <div>
+                        <h3>Chief Executive Officer</h3>
+                        <b>Barro &middot; Full-time</b>
+                        <b>Jun 2016 - Present &middot; 7 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In explicabo iste possimus iusto impedit eveniet expedita 
+                            quibusdam dolores rem et porro placeat cumque. 
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.png">
+                    <div>
+                        <h3>Chief Marketing Officer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Apr 2013 - Jun 2016 &middot; 3.2 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In explicabo iste possimus iusto impedit eveniet expedita 
+                            quibusdam dolores rem et porro placeat cumque. 
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/google.png">
+                    <div>
+                        <h3>Strategy Specialist</h3>
+                        <b>Google &middot; Full-time</b>
+                        <b>Mar 2010 - Apr 2013 &middot; 3.1 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In explicabo iste possimus iusto impedit eveniet expedita 
+                            quibusdam dolores rem et porro placeat cumque. 
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/slack.png">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <b>Slack &middot; Full-time</b>
+                        <b>Feb 2005 - Mar 2010 &middot; 5.1 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In explicabo iste possimus iusto impedit eveniet expedita 
+                            quibusdam dolores rem et porro placeat cumque. 
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all 5 experiences 
+                    <img src="images/right-arrow.png" alt=""></a>
+            </div>
+            <!-----education------>
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="images/stanford.png">
+                    <div>
+                        <h3>Stanford University</h3>
+                        <b>M.S, Computer Science</b>
+                        <b>Jun 2001 - May 2004</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/north.png">
+                    <div>
+                        <h3>NorthWestern University</h3>
+                        <b>B.S, Computer Science</b>
+                        <b>Jun 1997 - May 2001</b>
+                    </div>
+                </div>
+            </div>
+            <!-----skills------>
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Leadership</a>
+                <a href="#" class="skills-btn">Marketing</a>
+                <a href="#" class="skills-btn">Strategy</a>
+                <a href="#" class="skills-btn">Development</a>
+                <a href="#" class="skills-btn">Designing</a>
+                <a href="#" class="skills-btn">Communication</a>
+                <a href="#" class="skills-btn">UI/UX Design</a>
+                <a href="#" class="skills-btn">Management</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">Planning</a>
+            </div>
+            <!-----languages------>
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">English</a>
+                <a href="#" class="language-btn">Japanese</a>
+                <a href="#" class="language-btn">Korean</a>
+            </div>
+        </div>
+        <!-----sidebar profile section------>
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad</small>
+                <p>Master the principles of strategy specialist</p>
+                <div>
+                    <img src="images/user-1.png" >
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn more</a>
+            </div>
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h2>Tammy</h2>
+                        <p>Strategy Manager at Barro</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h2>Scarlett</h2>
+                        <p>General Manager at Barro</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h2>Alex</h2>
+                        <p>Marketing Manager at Barro</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h2>Jenny</h2>
+                        <p>Dev Lead at Barro</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h2>Joseph</h2>
+                        <p>Search Team Manager at Barro</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------footer------->
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png">
+                <p>Linkedin &copy; 2023. All right reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
