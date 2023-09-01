@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+    text-transform: capitalize;
+}
+/*----header section start----*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(222, 222, 222);
+    padding: 22px 9%;
+}
+header .logo{
+    font-weight: bolder;
+    color: grey;
+    font-size: 40px;
+    text-decoration: none;
+}
+header .logo i{
+    padding-right: 8px;
+    color: red;
+}
+header .navbar a{
+    font-size: 22px;
+    margin-left: 32px;
+    color: gray;
+    text-decoration: none;
+}
+header .navbar a:hover{
+    color: red;
+}
+#menu-bar{
+    cursor: pointer;
+    color: gray;
+    font-size:35px ;
+    border:  1px solid gray;
+    border-radius:5px ;
+    padding:8px 24px;
+    display: none;
+}
+/*----header section end----*/
+/*----home section start----*/
+/*section{
+    padding:32px 9% ;
+}*/
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    flex: 1 1 640px;
+    padding-top: 104px;
+}
+.home .image{
+    flex: 1 1 640px;
+}
+.home .image img{
+    width: 100%;
+    padding: 10px;
+}
+.home .content h3{
+    font-size:50px ;
+    color: rgb(65, 65, 65);
+    padding-left: 56px;
+}
+.home .content p{
+    font-size:18px ;
+    color: rgb(133, 133, 133);
+    padding: 56px ;
+}
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    padding:  15px;
+    border: 1px solid red;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 0;
+    margin-top: 16px;
+    margin-left: 56px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+/*----home section end----*/
+/*----speciality section start----*/
+.heading{
+    font-size: 50px;
+    padding: 16px;
+    text-align: center;
+    color: gray;
+}
+.heading span{
+    color: red;
+}
+.speciality .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.speciality .box-container .box{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid black;
+    flex:  1 1 400px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.speciality .box-container .box .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    
+    
+}
+.speciality .box-container .box .content{
+    text-align: center;
+    background-color: white;
+    padding: 32px;
+}
+.speciality .box-container .box .content img{
+    margin: 10px 0;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.speciality .box-container .box .content h3{
+    font-size: 30px;
+    color: black;
+}
+.speciality .box-container .box .content p{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+.speciality .box-container .box:hover .image{
+    top:0;
+}
+/*----speciality section end----*/
+/*--steps section start--*/
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 16px;
+}
+.steps .box{
+    flex:1 1 100px ;
+    padding: 10px;
+    text-align: center;
+}
+.steps .box img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.steps .box h3{
+    font-size:18px;
+    padding: 10px;
+    color: black;
+}
+/*--steps section end--*/
+/*--review section start--*/
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.review .box-container .box{
+    text-align: center;
+    padding: 32px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    margin-top: 96px;
+    background-color: white;
+    border: 2px solid black;
+}
+.review .box-container .box img{
+    background: transparent;
+    width: 192px;
+    height: 192px ;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: -128px ;
+    object-fit: cover;
+    object-position: center;
+}
+.review .box-container .box h3{
+    font-size: 20px;
+    color: black;
+    padding: 8px 0;
+}
+.review .box-container .box .stars i{
+    font-size: 18px;
+    color: red;
+    padding: 8px 0;
+}
+.review .box-container .box p{
+    font-size: 18px;
+    color: black;
+    padding: 8px 0;
+}
+/*--review section end--*/
+/*--order section start--*/
+.order .row{
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.order .row .image{
+    flex:  1 1 200px;
+}
+.order .row .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+.order .row form{
+    flex: 1 1 300px;
+    padding: 16px;
+}
+.order .row form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.order .row form .inputBox input, .order .row form textarea{
+    padding: 16px;
+    margin: 16px 0;
+    font-size: 20px;
+    color: gray;
+    text-transform: none;
+    border-radius: 8px;
+    width: 49%;
+    border: 1px solid black;
+}
+.order .row form textarea{
+    width: 100%;
+    resize: none;
+    height: 240px;
+}
+.order .row form .btn{
+    background: none;
+    padding: 10px;
+    text-transform: capitalize;
+    padding:  15px;
+    border: 1px solid red;
+    font-size: 18px;
+}
+.order .row form .btn:hover{
+    background: red;
+}
+/*--order section end--*/
+/*----footer section----*/
+.footer{
+    background-color: rgb(222, 222, 222);
+    text-align: center;
+}
+.footer .share{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.footer .credit{
+    padding: 32px 16px;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.footer .credit span{
+    color: red;
+}
+.footer .share a i{
+    font-size: 30px;
+    color: red;
+   padding: 15px;
+}
+.footer h1{
+    padding: 20px;
+}
+/*-----media queries-----*/
+@media (max-width : 991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 20px;
+    }
+    section{
+        padding:22px  ;
+    }
+}
+@media (max-width : 768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(248, 253, 253);
+        border-top: 2px solid black;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        margin: 20px;
+        padding: 18px;
+        display: block;
+        border: 1px solid black;
+        background-color: white;
+    }
+}
+@media (max-width : 400px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
